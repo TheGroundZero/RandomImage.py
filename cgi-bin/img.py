@@ -43,7 +43,7 @@ def random_file(dir):
 
 
 def main():
-    directory = "./img/"
+    directory = "../img/"
     img = random_file(directory)
     display_image(directory + img)
 

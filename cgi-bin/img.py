@@ -14,7 +14,7 @@ ext2conttype = {
 
 
 def main():
-    directory = "/root/TOOLS/RandomImage.py/img/"
+    directory = "./img/"
     img = random_file(directory)
     display_image(directory + img)
 

@@ -1,13 +1,52 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Random Images</title>
+    <title>VDL Summer Fair Demo - Vandelanotte Security &amp; Privacy</title>
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
 </head>
 <body>
-<h1>Hello world!</h1>
-<img src="/cgi-bin/img.py"/>
+
+<h1>Cybersecurity & Cyberlegal <small>CYB01</small></h1>
+<h2>Summer Fair Demo</h2>
+
+<p id="welcome"></p>
+
+<p class="calltoaction">
+Vergeet niet om het scherm op de stand van Vandelanotte Security &amp; Privacy te bezichtigen!<br />
+N'oubliez pas de regarder l'écran sur le stand Vandelanotte Security &amp; Privacy!
+</p>
+
+<p>
+Surf veilig! Surfez en toute sécurité!
+</p>
+
+<div class="resp-img">
+    <img src="/cgi-bin/img.py" class="meme" />
+</div>
+
+<form action="/cgi-bin/form.py" method="POST">
+    <p class="calltoaction">
+    VUL GEEN ECHTE LOGINGEGEVENS IN DIT FORMULIER IN!<br />
+    NE PAS ENTRER DE VRAIS IDENTIFIANTS DE CONNEXION DANS CE FORMULAIRE!<br />
+    DO NOT ENTER REAL LOGIN CREDENTIALS IN THIS FORM!
+    </p>
+
+    <input type="text" name="username" id="username" size="20" placeholder="insecure username" />
+    <input type="text" name="password" id="password" size="20" placeholder="insecure password"/>
+    <input type="submit" value="Hack me">
+</form>
+
+<p id="countdown"></p>
+
+<footer>
+  <p>&copy; 2019 Vandelanotte Security & Privacy</p>
+</footer>
+
+<script src="/js/countdown.js"></script>
+<script src="/js/welcome.js"></script>
+
 </body>
 </html>

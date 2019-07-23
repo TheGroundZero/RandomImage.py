@@ -6,10 +6,15 @@ from os import listdir
 from random import choice
 
 ext2conttype = {
+    ".bmp": "image/bmp",
+    ".gif": "image/gif",
     ".jpg": "image/jpeg",
     ".jpeg": "image/jpeg",
     ".png": "image/png",
-    ".gif": "image/gif"
+    ".svg": "image/svg+xml",
+    ".tiff": "image/tiff",
+    ".webp": "image/webp",
+    ".ico": "image/x-icon"
 }
 
 

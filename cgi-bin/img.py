@@ -6,10 +6,15 @@ from os import listdir
 from random import choice
 
 ext2conttype = {
+    ".bmp": "image/bmp",
+    ".gif": "image/gif",
     ".jpg": "image/jpeg",
     ".jpeg": "image/jpeg",
     ".png": "image/png",
-    ".gif": "image/gif"
+    ".svg": "image/svg+xml",
+    ".tiff": "image/tiff",
+    ".webp": "image/webp",
+    ".ico": "image/x-icon"
 }
 
 
@@ -19,6 +24,7 @@ def display_image(src):
     sys.stdout.write("Cache-Control: no-cache, no-store, must-revalidate\n")
     sys.stdout.write("Pragma: no-cache\n")
     sys.stdout.write("Expires: 0\n")
+    sys.stdout.write("X-Content-Type-Options: nosniff\n")
     sys.stdout.write("\n")
     sys.stdout.flush()
     sys.stdout.buffer.write(open(src, "rb").read())
